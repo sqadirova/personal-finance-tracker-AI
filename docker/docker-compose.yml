@@ -11,6 +11,16 @@ services:
     ports:
       - "5433:5432"
 
+  postgres-transactions:
+    image: postgres:14
+    container_name: transactions-postgres
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: transactionsdb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq

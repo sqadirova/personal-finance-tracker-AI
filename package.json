@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "scripts": {
     "dev:auth": "npm run start:dev --prefix apps/auth-service",
-    "migrate:auth": "npx prisma migrate dev --name init --schema=apps/auth-service/prisma/schema.prisma",
-    "generate:auth": "npx prisma generate --schema=apps/auth-service/prisma/schema.prisma"
+    "dev:transactions": "npm run start:dev --prefix apps/transactions-service",
+    "migrate:auth": "npx prisma migrate dev --schema=apps/auth-service/prisma/schema.prisma",
+    "migrate:transactions": "npx prisma migrate dev --schema=apps/transactions-service/prisma/schema.prisma",
+    "generate:transactions": "npx prisma generate --schema=apps/transactions-service/prisma/schema.prisma"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
