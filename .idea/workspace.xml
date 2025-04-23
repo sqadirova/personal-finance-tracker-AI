@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- Move auth-service into monorepo structure">
+    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- transactions service completed">
       <change afterPath="$PROJECT_DIR$/apps/transactions-service/apps/transactions-service/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/transactions-service/apps/transactions-service/.prettierrc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/transactions-service/apps/transactions-service/eslint.config.mjs" afterDir="false" />
@@ -30,10 +30,6 @@
       <change afterPath="$PROJECT_DIR$/apps/transactions-service/apps/transactions-service/test/jest-e2e.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/transactions-service/apps/transactions-service/tsconfig.build.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/transactions-service/apps/transactions-service/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/auth-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/auth-service/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/auth-service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/package.json" afterDir="false" />
@@ -42,9 +38,6 @@
       <change beforePath="$PROJECT_DIR$/apps/auth-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/auth-service/src/app.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/auth-service/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +57,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/apps/transactions-service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -124,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745399055839</updated>
-      <workItem from="1745399057045" duration="11705000" />
+      <workItem from="1745399057045" duration="12068000" />
     </task>
     <task id="LOCAL-00001" summary="-- Setup and Auth Service completed">
       <option name="closed" value="true" />
@@ -154,6 +147,7 @@
     </ignored-roots>
     <MESSAGE value="-- Setup and Auth Service completed" />
     <MESSAGE value="-- Move auth-service into monorepo structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- Move auth-service into monorepo structure" />
+    <MESSAGE value="-- transactions service completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- transactions service completed" />
   </component>
 </project>
