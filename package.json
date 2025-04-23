@@ -1,0 +1,15 @@
+{
+  "name": "finance-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:auth": "npm run start:dev --prefix apps/auth-service",
+    "migrate:auth": "npx prisma migrate dev --name init --schema=apps/auth-service/prisma/schema.prisma",
+    "generate:auth": "npx prisma generate --schema=apps/auth-service/prisma/schema.prisma"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0"
+  }
+}
+
