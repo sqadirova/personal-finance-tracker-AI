@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- ai-recommender service added;  dockerized all services">
-      <change afterPath="$PROJECT_DIR$/apps/auth-service/src/prisma/prisma.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/auth-service/src/prisma/prisma.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/prisma/prisma.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/prisma/prisma.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/prisma/prisma.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/prisma/prisma.service.ts" afterDir="false" />
+    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- Refactored Prisma Connection Handling">
+      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/auth/jwt-auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/auth/jwt.strategy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/auth/jwt-auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/auth/jwt.strategy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/users/users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,7 @@
       <workItem from="1745510353788" duration="98000" />
       <workItem from="1745510462848" duration="85000" />
       <workItem from="1745572430887" duration="6831000" />
-      <workItem from="1745671296245" duration="7386000" />
+      <workItem from="1745671296245" duration="10625000" />
     </task>
     <task id="LOCAL-00001" summary="-- Setup and Auth Service completed">
       <option name="closed" value="true" />
@@ -160,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745676532424</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-- Refactored Prisma Connection Handling">
+      <option name="closed" value="true" />
+      <created>1745681124307</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745681124307</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +187,7 @@
     <MESSAGE value="-- transactions service completed" />
     <MESSAGE value="-- budget service added" />
     <MESSAGE value="-- ai-recommender service added;  dockerized all services" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- ai-recommender service added;  dockerized all services" />
+    <MESSAGE value="-- Refactored Prisma Connection Handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- Refactored Prisma Connection Handling" />
   </component>
 </project>

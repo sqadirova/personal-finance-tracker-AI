@@ -1,16 +1,12 @@
-import { Controller, Post, Get, Delete, Body, Param } from '@nestjs/common';
+import { Controller, Post, Get, Delete, Body, Param, UseGuards } from '@nestjs/common';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { TransactionsService } from './transactions.service';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 
-
+@UseGuards(JwtAuthGuard)
 @Controller('transactions')
 export class TransactionsController {
     constructor(private readonly service: TransactionsService) {}
-
-    // @Post()
-    // create(@Body() body) {
-    //     return this.service.create(body);
-    // }
 
     @Post()
     create(@Body() body: CreateTransactionDto) {
@@ -42,6 +38,5 @@ export class TransactionsController {
     getMonthlyTransactionsSplit(@Param('userId') userId: string) {
         return this.service.getCurrentMonthTransactionsSplit(userId);
     }
-
 
 }
