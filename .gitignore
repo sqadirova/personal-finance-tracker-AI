@@ -15,7 +15,7 @@ yarn-error.log*
 dist/
 build/
 
-## Environment variables
+## Environment variables - for production
 #.env
 #.env.local
 

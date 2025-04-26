@@ -19,7 +19,7 @@ model BudgetSuggestion {
   month      String
   income     Decimal  @db.Decimal(10, 2)
   expense    Decimal  @db.Decimal(10, 2)
-  suggestion String
+  suggestion Json
   createdAt  DateTime @default(now())
 }
 

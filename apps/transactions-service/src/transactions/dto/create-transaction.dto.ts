@@ -1,10 +1,10 @@
 import { TransactionType } from '../transaction-type.enum';
 import { CategoryType } from '../category-type.enum';
-import { IsEnum, IsNumber, IsString } from 'class-validator';
+import { IsUUID, IsEnum, IsNumber, IsString } from 'class-validator';
 
 
 export class CreateTransactionDto {
-    @IsString()
+    @IsUUID()
     userId: string;
 
     @IsNumber()

@@ -7,7 +7,11 @@
     "dev:transactions": "npm run start:dev --prefix apps/transactions-service",
     "migrate:auth": "npx prisma migrate dev --schema=apps/auth-service/prisma/schema.prisma",
     "migrate:transactions": "npx prisma migrate dev --schema=apps/transactions-service/prisma/schema.prisma",
-    "generate:transactions": "npx prisma generate --schema=apps/transactions-service/prisma/schema.prisma"
+    "generate:transactions": "npx prisma generate --schema=apps/transactions-service/prisma/schema.prisma",
+    "docker:start": "docker-compose -f docker/docker-compose.yml up --build -d",
+    "docker:stop": "docker-compose -f docker/docker-compose.yml down",
+    "docker:logs": "docker-compose -f docker/docker-compose.yml logs -f --tail=100",
+    "docker:restart": "npm run docker:stop && npm run docker:start"
   },
   "devDependencies": {
     "eslint": "^8.0.0",

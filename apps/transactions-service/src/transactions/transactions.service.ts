@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, BadRequestException } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 import { TransactionType } from './transaction-type.enum';
@@ -10,11 +10,16 @@ const prisma = new PrismaClient();
 
 @Injectable()
 export class TransactionsService {
-    // create(data: any) {
-    //     return prisma.transaction.create({ data });
-    // }
 
-    create(data: CreateTransactionDto) {
+    async create(data: CreateTransactionDto) {
+        // const user = await prisma.user.findUnique({
+        //     where: { id: data.userId },
+        // });
+        //
+        // if (!user) {
+        //     throw new BadRequestException('Invalid userId: User does not exist.');
+        // }
+
         return prisma.transaction.create({ data });
     }
 
