@@ -4,44 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- budget service added">
-      <change afterPath="$PROJECT_DIR$/ai-recommender/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-recommender/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-recommender/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/auth-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/auth-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/budget-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/budget-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/transactions-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/transactions-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3330d4e-2996-4899-84b9-ae1dc5c5d042.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e3330d4e-2996-4899-84b9-ae1dc5c5d042.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3330d4e-2996-4899-84b9-ae1dc5c5d042/storage_v2/_src_/database/authdb.JiAtrA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e3330d4e-2996-4899-84b9-ae1dc5c5d042/storage_v2/_src_/database/authdb.JiAtrA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/finance-tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/finance-tracker.iml" afterDir="false" />
+    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- ai-recommender service added;  dockerized all services">
+      <change afterPath="$PROJECT_DIR$/apps/auth-service/src/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/auth-service/src/prisma/prisma.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/prisma/prisma.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/prisma/prisma.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/auth-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/auth-service/prisma/migrations/20250423093100_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/auth-service/prisma/migrations/migration_lock.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/prisma/migrations/20250424125448_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/prisma/migrations/migration_lock.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/users/users.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/budget-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/prisma/migrations/20250423104312_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/prisma/migrations/20250423110916_category_as_enum/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/prisma/migrations/20250423115411_change_amount_to_decimal/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/prisma/migrations/migration_lock.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/transactions/dto/create-transaction.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/transactions/dto/create-transaction.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,35 +62,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/siddiga/WebstormProjects/finance-tracker/apps/transactions-service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\siddiga\\WebstormProjects\\finance-tracker\\apps\\transactions-service\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/siddiga/WebstormProjects/finance-tracker/apps/auth-service/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "C:\\Users\\siddiga\\WebstormProjects\\finance-tracker\\apps\\transactions-service\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\siddiga\WebstormProjects\finance-tracker\apps\auth-service\src" />
+      <recent name="C:\Users\siddiga\WebstormProjects\finance-tracker\apps\budget-service\src" />
       <recent name="C:\Users\siddiga\WebstormProjects\finance-tracker\apps\transactions-service" />
       <recent name="C:\Users\siddiga\WebstormProjects\finance-tracker\apps\budget-service" />
     </key>
@@ -140,7 +118,7 @@
       <workItem from="1745510353788" duration="98000" />
       <workItem from="1745510462848" duration="85000" />
       <workItem from="1745572430887" duration="6831000" />
-      <workItem from="1745671296245" duration="4159000" />
+      <workItem from="1745671296245" duration="7386000" />
     </task>
     <task id="LOCAL-00001" summary="-- Setup and Auth Service completed">
       <option name="closed" value="true" />
@@ -174,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745500641442</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-- ai-recommender service added;  dockerized all services">
+      <option name="closed" value="true" />
+      <created>1745676532424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745676532424</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +176,7 @@
     <MESSAGE value="-- Move auth-service into monorepo structure" />
     <MESSAGE value="-- transactions service completed" />
     <MESSAGE value="-- budget service added" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- budget service added" />
+    <MESSAGE value="-- ai-recommender service added;  dockerized all services" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- ai-recommender service added;  dockerized all services" />
   </component>
 </project>

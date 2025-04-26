@@ -1,37 +1,28 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
-import { PrismaClient } from '@prisma/client';
+import { PrismaService } from '../prisma/prisma.service'; // << IMPORT
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 import { TransactionType } from './transaction-type.enum';
-import { CategoryType } from './category-type.enum';
 import Decimal from 'decimal.js';
 
 
-const prisma = new PrismaClient();
-
 @Injectable()
 export class TransactionsService {
+    constructor(private readonly prisma: PrismaService) {}
 
-    async create(data: CreateTransactionDto) {
-        // const user = await prisma.user.findUnique({
-        //     where: { id: data.userId },
-        // });
-        //
-        // if (!user) {
-        //     throw new BadRequestException('Invalid userId: User does not exist.');
-        // }
+    create(data: CreateTransactionDto) {
 
-        return prisma.transaction.create({ data });
+        return this.prisma.transaction.create({ data });
     }
 
     findAll(userId: string) {
-        return prisma.transaction.findMany({ where: { userId } });
+        return this.prisma.transaction.findMany({ where: { userId } });
     }
 
     async getCurrentMonthTransactions(userId: string) {
         const now = new Date();
         const firstDay = new Date(now.getFullYear(), now.getMonth(), 1);
 
-        return prisma.transaction.findMany({
+        return this.prisma.transaction.findMany({
             where: {
                 userId,
                 createdAt: { gte: firstDay },
@@ -42,14 +33,14 @@ export class TransactionsService {
 
 
     remove(id: string) {
-        return prisma.transaction.delete({ where: { id } });
+        return this.prisma.transaction.delete({ where: { id } });
     }
 
     async getMonthlySummary(userId: string) {
         const now = new Date();
         const firstDay = new Date(now.getFullYear(), now.getMonth(), 1);
 
-        const income = await prisma.transaction.aggregate({
+        const income = await this.prisma.transaction.aggregate({
             _sum: { amount: true },
             where: {
                 userId,
@@ -58,7 +49,7 @@ export class TransactionsService {
             },
         });
 
-        const expense = await prisma.transaction.aggregate({
+        const expense = await this.prisma.transaction.aggregate({
             _sum: { amount: true },
             where: {
                 userId,
@@ -67,7 +58,7 @@ export class TransactionsService {
             },
         });
 
-        const expensesByCategory = await prisma.transaction.groupBy({
+        const expensesByCategory = await this.prisma.transaction.groupBy({
             by: ['category'],
             where: {
                 userId,
@@ -98,7 +89,7 @@ export class TransactionsService {
         const now = new Date();
         const firstDay = new Date(now.getFullYear(), now.getMonth(), 1);
 
-        const income = await prisma.transaction.findMany({
+        const income = await this.prisma.transaction.findMany({
             where: {
                 userId,
                 type: 'income',
@@ -107,7 +98,7 @@ export class TransactionsService {
             orderBy: { createdAt: 'desc' },
         });
 
-        const expense = await prisma.transaction.findMany({
+        const expense = await this.prisma.transaction.findMany({
             where: {
                 userId,
                 type: 'expense',
