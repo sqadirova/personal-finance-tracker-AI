@@ -1,4 +1,4 @@
-import { Controller, Post, Get, Delete, Body, Param, UseGuards } from '@nestjs/common';
+import { UseGuards, Controller, Post, Get, Delete, Body, Param } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { TransactionsService } from './transactions.service';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
@@ -31,6 +31,7 @@ export class TransactionsController {
 
     @Get('summary/:userId')
     getSummary(@Param('userId') userId: string) {
+        console.log("getting summary for user:", userId)
         return this.service.getMonthlySummary(userId);
     }
 

@@ -4,20 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- Refactored Prisma Connection Handling">
-      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/auth/jwt-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/budget-service/src/auth/jwt.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/auth/jwt-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/transactions-service/src/auth/jwt.strategy.ts" afterDir="false" />
+    <list default="true" id="0ba5940b-99e7-4243-a5cc-3bcf3fc421cd" name="Changes" comment="-- handle error with docker --&gt; &quot;db user do not exits&quot;">
+      <change afterPath="$PROJECT_DIR$/apps/auth-service/src/auth/jwt.strategy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/auth-service/src/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/auth-service/src/users/users.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/budget-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/budget/budget.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/budget-service/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/budget-service/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/transactions-service/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/transactions-service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/auth/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/auth/jwt.strategy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/transactions-service/src/transactions/transactions.module.ts" afterDir="false" />
     </list>
@@ -64,33 +68,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/siddiga/WebstormProjects/finance-tracker/apps/auth-service/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "ts.external.directory.path": "C:\\Users\\siddiga\\WebstormProjects\\finance-tracker\\apps\\transactions-service\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/siddiga/WebstormProjects/finance-tracker/apps/auth-service/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\siddiga\\WebstormProjects\\finance-tracker\\apps\\transactions-service\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
     ],
-    "DatabaseDriversLRU": [
-      "postgresql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\siddiga\WebstormProjects\finance-tracker\apps\auth-service\src" />
@@ -120,7 +124,9 @@
       <workItem from="1745510353788" duration="98000" />
       <workItem from="1745510462848" duration="85000" />
       <workItem from="1745572430887" duration="6831000" />
-      <workItem from="1745671296245" duration="10625000" />
+      <workItem from="1745671296245" duration="10979000" />
+      <workItem from="1745741582450" duration="5951000" />
+      <workItem from="1745767753107" duration="10898000" />
     </task>
     <task id="LOCAL-00001" summary="-- Setup and Auth Service completed">
       <option name="closed" value="true" />
@@ -170,7 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745681124307</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="-- added JWT authentication to budget-service and transactions-service">
+      <option name="closed" value="true" />
+      <created>1745685258125</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745685258125</updated>
+    </task>
+    <task id="LOCAL-00008" summary="-- handle error with docker --&gt; &quot;db user do not exits&quot;">
+      <option name="closed" value="true" />
+      <created>1745776995667</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745776995667</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +210,8 @@
     <MESSAGE value="-- budget service added" />
     <MESSAGE value="-- ai-recommender service added;  dockerized all services" />
     <MESSAGE value="-- Refactored Prisma Connection Handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- Refactored Prisma Connection Handling" />
+    <MESSAGE value="-- added JWT authentication to budget-service and transactions-service" />
+    <MESSAGE value="-- handle error with docker --&gt; &quot;db user do not exits&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- handle error with docker --&gt; &quot;db user do not exits&quot;" />
   </component>
 </project>

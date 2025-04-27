@@ -5,9 +5,9 @@ import { TransactionsModule } from './transactions/transactions.module';
 
 @Module({
   imports: [
+      ConfigModule.forRoot({ isGlobal: true }),
       PrismaModule,
       TransactionsModule,
-    ConfigModule.forRoot({ isGlobal: true }),
   ],
 })
 export class AppModule {}

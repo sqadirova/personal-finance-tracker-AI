@@ -1,14 +1,33 @@
-import { Module } from '@nestjs/common';
-import { JwtStrategy } from '../auth/jwt.strategy';
-import { JwtModule } from '@nestjs/jwt';
-import { TransactionsService } from './transactions.service';
-import { TransactionsController } from './transactions.controller';
+import {Module} from '@nestjs/common';
+import {
+    ConfigModule,
+    ConfigService
+} from '@nestjs/config';
+
+import {PassportModule} from '@nestjs/passport';
+import {JwtModule} from '@nestjs/jwt';
+
+import {TransactionsController} from './transactions.controller';
+import {TransactionsService} from './transactions.service';
+import {JwtStrategy} from '../auth/jwt.strategy';
+import {PrismaModule} from '../prisma/prisma.module';
 
 @Module({
-  imports: [
-    JwtModule.register({}),
-  ],
-  providers: [TransactionsService, JwtStrategy],
-  controllers: [TransactionsController]
+    imports: [
+        ConfigModule,
+        PrismaModule,
+        PassportModule.register({defaultStrategy: 'jwt'}),
+        JwtModule.registerAsync({
+            imports: [ConfigModule],
+            inject: [ConfigService],
+            useFactory: (cfg: ConfigService) => ({
+                secret: cfg.get<string>('JWT_SECRET'),
+                signOptions: {expiresIn: '1h'},
+            }),
+        }),
+    ],
+    controllers: [TransactionsController],
+    providers: [TransactionsService, JwtStrategy],
 })
-export class TransactionsModule {}
+export class TransactionsModule {
+}
